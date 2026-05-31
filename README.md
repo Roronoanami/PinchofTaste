@@ -68,35 +68,7 @@ PinchofTaste1
 │
 └── .gitignore
 
-⚙️ Installation
 
-Clone Repository
-
-git clone https://github.com/Roronoanami/PinchofTaste.git
-cd PinchofTaste
-
-Frontend Setup
-
-cd frontend
-npm install
-npm run dev
-
-Backend Setup
-
-cd backend
-mvn spring-boot:run
-
-🔐 Environment Variables
-
-Frontend ".env"
-
-VITE_API_URL=http://localhost:8080
-
-Backend configuration example:
-
-spring.data.mongodb.uri=YOUR_MONGODB_CONNECTION_STRING
-
-Never commit ".env" files or database credentials to GitHub.
 
 🎯 Learning Outcomes
 
@@ -118,6 +90,6 @@ Never commit ".env" files or database credentials to GitHub.
 
 👨‍💻 Author
 
-Ankur Sama
+Ankur 
 
 Passionate about Full-Stack Development, Software Engineering, and building real-world applications.
