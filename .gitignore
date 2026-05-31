@@ -2,11 +2,14 @@
 .env
 .env.*
 
-# Frontend
+# Node
+node_modules/
 frontend/node_modules/
+
+# React build
 frontend/dist/
 
-# Backend
+# Java
 backend/target/
 
 # VS Code
