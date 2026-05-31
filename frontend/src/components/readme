@@ -1,0 +1,49 @@
+    for navbar.jsx
+
+
+
+
+    Navbar Component
+
+This is a responsive navigation bar built with React and Tailwind CSS. It works on both desktop and mobile.
+
+Features
+
+Logo: Clickable, links to home page.
+
+Navigation Links: Home, All Food, Contact.
+
+Search Bar:
+
+Visible on desktop and mobile.
+
+Has a search icon and placeholder text.
+
+Cart Icon: Shows number of items.
+
+User Section:
+
+Shows Login button if not logged in.
+
+Shows profile icon if logged in.
+
+Mobile menu shows Logout button if logged in.
+
+Mobile Menu:
+
+Hidden by default, opens with hamburger button.
+
+Contains search bar, links, and login/logout button.
+
+Responsive Design: Layout adjusts for small and large screens.
+
+Hover Effects: Smooth color and scale transitions on links and buttons.
+
+How it works    
+Uses state open to toggle mobile menu.
+
+Uses context user to check login status.
+
+Desktop menu visible on larger screens, mobile menu visible when opened.
+
+Navigation uses NavLink from React Router.

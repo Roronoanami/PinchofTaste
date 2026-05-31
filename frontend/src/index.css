@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif, 'Outfit';
+  min-height: 100vh;
+}
+
+@theme {
+  --color-primary: #bf4a61;
+}
+.border-glow-multi {
+  background: linear-gradient(
+    90deg,
+    #ec4899, /* pink */
+    #3b82f6, /* blue */
+    #facc15, /* yellow */
+    #f97316, /* orange */
+    #b34d4d, /* red */
+    #ec4899,
+    #e01600,
+    #f89762 /* pink again to loop smoothly */
+  );
+  background-size: 600% 600%;
+  animation: colorShift 8s linear infinite;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+  
+}
