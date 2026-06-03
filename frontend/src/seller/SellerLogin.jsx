@@ -7,9 +7,14 @@ import { useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const SellerLogin = () => {
-  const { showSellerLogin, setShowSellerLogin, setUser, setIsSeller } =
-    useAppContext();
 
+      const {
+  showSellerLogin,
+  setShowSellerLogin,
+  setUser,
+  setIsSeller,
+  API,
+} = useAppContext();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -25,12 +30,12 @@ const SellerLogin = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:8080/api/seller/auth/login", {
+     const res = await fetch(`${API}/seller/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
-
+ 
       if (!res.ok) {
         const msg = await res.text();
         toast.error("Login failed: " + msg);
@@ -49,9 +54,8 @@ const sellerUser = {
 setUser(sellerUser);
 setIsSeller(true);
 
-localStorage.setItem("token", data.token);
-localStorage.setItem("email", data.email);
-
+localStorage.setItem("sellerToken", data.token);
+localStorage.setItem("sellerEmail", data.email);
 
       toast.success("Seller logged in!");
 

@@ -43,16 +43,24 @@ export const AppContextProvider = ({ children }) => {
   }, []);
 
   // Restore SELLER login
-  useEffect(() => {
-    const sellerToken = localStorage.getItem("sellerToken");
-    const sellerEmail = localStorage.getItem("sellerEmail");
+// Restore SELLER login
+useEffect(() => {
+  const sellerToken = localStorage.getItem("sellerToken");
+  const sellerEmail = localStorage.getItem("sellerEmail");
 
-    if (sellerToken && sellerEmail) {
-      setIsSeller(true);
-      setUser({ email: sellerEmail, role: "SELLER", token: sellerToken });
-      tokenRef.current = sellerToken;
-    }
-  }, []);
+  if (sellerToken && sellerEmail) {
+    setIsSeller(true);
+
+    setUser({
+      email: sellerEmail,
+      role: "SELLER",
+      token: sellerToken,
+    });
+
+    setToken(sellerToken);
+    tokenRef.current = sellerToken;
+  }
+}, []);
 
   // ---------------- DATA ----------------
   const [products, setProducts] = useState([]);
