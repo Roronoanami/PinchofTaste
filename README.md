@@ -5,7 +5,7 @@ A full-stack food ordering platform built using React, Spring Boot, and MongoDB.
 
 
 Live Website:
-https://your-project.vercel.app
+https://pinchof-taste.vercel.app/
 
 🚀 Features
 
