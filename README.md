@@ -57,21 +57,6 @@ Version Control
 
 ---
 
-📂 Project Structure
-
-PinchofTaste1
-│
-├── frontend
-│   ├── src
-│   ├── public
-│   └── package.json
-│
-├── backend
-│   ├── src
-│   ├── pom.xml
-│   └── target
-│
-└── .gitignore
 
 
 
@@ -93,8 +78,8 @@ PinchofTaste1
 - Payment Gateway Integration
 - Advanced Search & Filtering
 
-👨‍💻 Author
 
+Created by..
 Ankur 
 
-Passionate about Full-Stack Development, Software Engineering, and building real-world applications.
+
